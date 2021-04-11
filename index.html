@@ -1,0 +1,51 @@
+/<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Front End Technologies - Week 4</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    </head>
+    <body class="container">
+        <div class="container">
+            <div class="jumbotron bg-success text-white">
+              <h1 class="display-3 text-center">Books I Want To Read</h1>
+              <p class="lead text-center">Add Books To This Table For Easy Reference Later</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="newBookTitle">Book Title</label>
+                            <input type="text" class="form-control" id="newBook">
+                        </div>
+                    </div>
+                </div>    
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="newAuthor">Author</label>
+                            <input type="text" class="form-control" id="newAuthor">
+                        </div>
+                    </div>
+                </div>
+                <button type="button" id="addBtn" class="btn btn-dark">Add Book To List</button>       
+            </div>
+        </div>
+        <br>
+        <div class="card">
+            <table id="myTable" class="table">
+                <tr class="bg-success-50">
+                    <th>Book Title</th>
+                    <th>Author</th>
+                </tr>
+            </table>
+        </div>  
+        <script src="index.js "></script>
+        <script src="node_modules/jquery/dist/jquery.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap/bundle.js"></script>
+    </body>
+</html>
